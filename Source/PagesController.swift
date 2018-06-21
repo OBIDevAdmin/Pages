@@ -7,7 +7,7 @@ import UIKit
 }
 
 @objc(HYPPagesController) open class PagesController: UIPageViewController {
-  private struct Dimensions {
+  public struct Dimensions {
     static let bottomLineHeight: CGFloat = 1.0
     static let bottomLineSideMargin: CGFloat = 40.0
     static let bottomLineBottomMargin: CGFloat = 36.0
@@ -29,7 +29,7 @@ import UIKit
   }
 
   public var showPageControl = true
-  private lazy var pages = Array<UIViewController>()
+  public lazy var pages = Array<UIViewController>()
 
   public var pagesCount: Int {
     return pages.count
